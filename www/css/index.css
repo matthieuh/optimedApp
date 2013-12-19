@@ -1,0 +1,105 @@
+﻿
+/* LOGO */
+
+#logo {
+	position:relative;
+	left: 10%;
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* SOCIALS BUTTONS */
+
+@font-face {
+    font-family: 'socialfont';
+    src: url(../font/socialfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#socialbuttons {
+	position:relative;
+	width:120px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10%;
+}
+
+
+.social-button {
+	width:50px;
+	height:50px;
+	display:inline-block;
+	font-family:Arial, "Helvetica", sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+	text-shadow:1px 1px 0px #07526e;
+	bottom:0px;
+	margin-left:auto;
+	margin-right:auto; 
+	position:relative;
+	cursor:pointer;
+	border: none;
+	background-image: -webkit-linear-gradient( #5283C5 , #004795); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #5283C5 , #004795 ); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #5283C5 , #004795 ); /* IE10 */
+	background-image:      -o-linear-gradient( #5283C5 , #004795 ); /* Opera 11.10+ */
+	background-image:         linear-gradient( #5283C5 , #004795 );
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+
+.social-button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+
+.social-button:before {
+	font-family: 'socialfont';
+	font-size: 45px;
+	line-height: 1em;
+	font-weight: normal;
+	color: #fff;
+	content: "\F020";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	padding-top: 1px;
+	top: 3px;
+	text-shadow: 1px 1px 2px #07526e;
+}
+
+
+.social-button:active:before {
+	top: 5px;
+	font-size: 50px;
+	text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e, 3px 0px 1px #07526e, 3px 3px 1px #07526e, -2px 0px 1px #68cff2;
+}
+
+
+.twitter {
+	background-image: -webkit-linear-gradient( #4C9DDE , #195B92 ); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #4C9DDE , #195B92 ); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #4C9DDE , #195B92 ); /* IE10 */
+	background-image:      -o-linear-gradient( #4C9DDE , #195B92 ); /* Opera 11.10+ */
+	background-image:         linear-gradient( #4C9DDE , #195B92 );
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+
+.twitter:before {
+  content:"\F021";
+}
+.in:before {
+  content:"\F022";
+}
+.vimeo:before{
+  content:"\F024";
+ 
+}

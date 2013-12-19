@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eurofins Optimed App</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+		
+		<link rel="stylesheet" type="text/css" href="jquery/theme/OptimedTheme.min.css" />
+		<link rel="stylesheet" href="jquery/jquery.mobile.structure.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/loading.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom-collapse.min.css" />
+
+
+		<script src="cordova.js"></script>		
+		<script type="text/javascript" src="jquery/jquery.min.js"></script> 
+		<script type="text/javascript" src="jquery/jquery.mobile.min.js"></script>
+		<script type='application/javascript' src='lib/fastclick.js'></script>
+
+	</head>
+
+	<body>
+
+		<div data-role="page" id="legalnotice"> 
+
+			<div data-role="header">
+				<a data-rel="back">Retour</a>
+				<h1>Mentions légales</h1>
+			</div>
+			
+			
+			
+			<div data-role="content">
+				<div class="msg_list" id="collapse">
+					<div data-role="collapsible-set" id="content">
+						<div id="spinner" class="active">
+							<span id="first" class="ball"></span>
+				        	<span id="second" class="ball"></span>
+				        	<span id="third" class="ball"></span>
+				        </div>
+					</div>
+				</div>
+				
+
+			</div>
+				
+		</div>
+		<script type="text/javascript" src="lib/fonctions.js"></script>
+		<script type="text/javascript" src="js/legalnotice.js"></script>
+		<script type="text/javascript" src="js/synchro.js"></script>
+    </body>
+</html>

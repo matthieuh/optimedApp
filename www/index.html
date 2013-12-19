@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eurofins Optimed App</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name = "format-detection" content = "telephone=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- JQM Theme css -->
+		<link rel="stylesheet" type="text/css" href="jquery/theme/OptimedTheme.min.css" />
+		<!-- JQM css -->
+		<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.structure.min.css" />
+		<!-- JQM Icons css -->
+		<link rel="stylesheet" type="text/css" href="jquery/theme/jqm-icon-pack-2.0-original.css" />
+
+
+		<!-- Page css -->
+		<link rel="stylesheet" type="text/css" href="css/index.min.css" />	
+		
+		<!-- Javascript includes -->
+		<script type="text/javascript" src="jquery/jquery.min.js"></script> 
+		<script type="text/javascript" src="jquery/jquery.mobile.min.js"></script>
+		<script type='application/javascript' src='lib/fastclick.js'></script>
+
+	</head>
+
+	<body>
+		<div data-role="page" id="accueil"> 
+			<div data-role="content">
+				<img id="logo" src="img/logo.png" alt="logo Eurofins optimed">
+				<a href="etudeslist.html" data-role="button" data-icon="grid" data-ajax="false" data-prefetch>Etudes Cliniques en cours</a>
+				<a href="info.html" data-role="button" data-icon="page" data-ajax="false" data-prefetch>Informations</a>
+				<a href="faq.html" data-role="button" data-icon="question" data-ajax="false" data-prefetch>F.A.Q.</a>
+				<a href="contact.html" data-role="button" data-icon="edit" data-ajax="false" data-prefetch>Nous Contacter</a>
+				<div id="socialbuttons">
+					<a href="" id="fbLink" class="social-button facebook" data-role="none"></a>
+					<a href="" id="twLink" class="social-button twitter" data-role="none"></a>
+				</div>
+				<p style="text-align:center">Copyright © Eurofins Optimed<br><a href="legalnotice.html" data-ajax="false" data-prefetch>Mentions légales</a></p>
+			</div>	
+		</div>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

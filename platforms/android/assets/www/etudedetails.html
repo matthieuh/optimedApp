@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Details Etude</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="jquery/theme/OptimedTheme.min.css" />
+		<link rel="stylesheet" href="jquery/jquery.mobile.structure.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/etudedetails.min.css" />
+
+		<style>	
+
+			/* BUTTONS */
+
+			.nav-glyphish .ui-btn .ui-btn-inner { 
+			    padding-top: 40px !important;
+			}
+
+			.nav-glyphish .ui-btn .ui-icon {
+			    width: 30px!important;
+			    height: 30px!important;
+			    margin-left: -15px !important;
+			    box-shadow: none!important;
+			    -moz-box-shadow: none!important;
+			    -webkit-box-shadow: none!important;
+			    -webkit-border-radius: 0 !important;
+			    border-radius: 0 !important;
+			}
+
+			#lienContacter .ui-icon {
+			    background:  url(img/icons/telephone.png) 50% 50% no-repeat;
+			    background-size: 24px 16px; 
+			}
+
+			#lienPostuler .ui-icon {
+			    background:  url(img/icons/email.png) 50% 50% no-repeat;
+			    background-size: 24px 16px; 
+			}
+			
+		</style>
+
+
+		<script type="text/javascript" src="jquery/jquery.min.js"></script> 
+		<script type="text/javascript" src="jquery/jquery.mobile.min.js"></script>
+
+		<script src="cordova.js"></script>
+
+		
+		<script type="text/javascript" src="lib/purl.js"></script>
+		<script type="text/javascript" src="lib/fastclick.js"></script>
+		<script type="text/javascript" src="lib/date.js"></script>
+
+		<script type="text/javascript" src="js/gmap.js"></script>
+		<script type="text/javascript" src="js/etudedetails.js"></script>
+	</head>
+<body>
+
+	<div data-role="page" class="etude-details-map" id="detailsPage">
+		
+		<div data-role="header" data-id="mainHeader">
+			<a data-rel="back">Retour</a>
+			<h1>Etude <span id="detailsRef"></span></h1>
+		</div>
+
+		<div data-role="content"> 
+			<div id="wrapper">
+			  	<div>
+			    	<ul id="dataList" data-role="none"></ul>
+			  	</div>
+			</div>
+
+
+			<a href="" target="_blank" id="btn-iti" data-role="button"> Itinéraire vers le centre</a>
+			<div id="map" class="etude-details-gmap"></div>
+
+		</div>
+
+		
+		
+		<div data-role="footer" class="nav-glyphish" data-position="fixed" data-theme="d"> 
+			<div data-role="navbar" class="nav-glyphish" data-grid="a">
+				<ul>
+					<li><a href="#" id="lienContacter" data-icon="star">Contacter Optimed</a></li>
+					<li><a href="" id="lienPostuler" data-icon="custom" data-ajax='false'>Postuler à cette étude</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

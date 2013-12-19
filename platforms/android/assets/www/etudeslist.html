@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Etudes Cliniques</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- JQM Theme css -->
+		<link rel="stylesheet" type="text/css" href="jquery/theme/OptimedTheme.min.css" />
+		<!-- JQM css -->
+		<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.structure.min.css" />
+		
+		<!-- Page css -->
+		<link rel="stylesheet" type="text/css" href="css/loading.css" />
+
+		<!-- PhoneGap Javascript -->
+		<script src="cordova.js"></script>
+
+		<!-- Javascript includes -->
+		<script type="text/javascript" src="jquery/jquery.min.js"></script> 
+		<script type="text/javascript" src="jquery/jquery.mobile.min.js"></script>
+		<script type='application/javascript' src='lib/fastclick.js'></script>
+
+	</head>
+	<body>
+
+		<div id="etude" data-role="page">
+			
+			<div data-role="header" data-id="mainHeader">
+				<a data-rel="back">Retour</a>
+				<h1>Etudes</h1>
+			</div>
+			<div data-role="content">
+				<div id="refresh"></div>
+				 <ul id="etudeList" data-role="listview" data-filter="true" data-filter-placeholder="Filtrer par mot clef..." >
+				 	<div id="spinner" class="active">
+						<span id="first" class="ball"></span>
+			        	<span id="second" class="ball"></span>
+			        	<span id="third" class="ball"></span>
+			        </div>
+			    </ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="lib/fonctions.js"></script>
+		<script type="text/javascript" src="js/etudelist.js"></script>
+		<script type="text/javascript" src="js/synchro.js"></script>
+    </body>
+</html>
